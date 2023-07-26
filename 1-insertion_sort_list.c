@@ -6,6 +6,8 @@
  * using the Insertion sort algorithm.
  *
  * @list: A pointer to the head of the doubly linked list.
+ *
+ * Return: Nothing
  */
 void insertion_sort_list(listint_t **list)
 {

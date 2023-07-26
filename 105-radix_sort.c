@@ -9,7 +9,7 @@
  *
  * @size: size of the array
  *
- * Return: Nothing
+ * Return: Nothing.
  */
 
 void radix_sort(int *array, size_t size)

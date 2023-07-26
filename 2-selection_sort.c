@@ -10,7 +10,7 @@
  *
  * @size: size of the array
  *
- * Return: Nothing
+ * Return: Nothing.
  */
 
 

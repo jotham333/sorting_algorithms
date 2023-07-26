@@ -3,9 +3,9 @@
 /**
  * get_max - get the max value in an array of integers.
  * @array: The array of integers.
- * @size: The size of the array to be sorted.
+ * @size: The size of the array to be sorted
  *
- * Return: The maximum integer in the array.
+ * Return: The maximum integer in the array
  */
 int get_max(int *array, int size)
 {

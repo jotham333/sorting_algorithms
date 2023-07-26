@@ -4,7 +4,7 @@
  * bubble_sort - sort an array in an accending order.
  * @array: The unordered list that will be sorted
  * @size: The size of the list
- * Return: nothing
+ * Return: nothing to return
  */
 
 void bubble_sort(int *array, size_t size)

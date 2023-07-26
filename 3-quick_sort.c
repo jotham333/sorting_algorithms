@@ -9,7 +9,7 @@
  *
  * @size: the size of the array
  *
- * Return: the sorted array
+ * Return: the sorted array.
  */
 
 void quick_sort(int *array, size_t size)
