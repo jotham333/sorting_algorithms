@@ -9,37 +9,40 @@
  */
 void shell_sort(int *array, size_t size)
 {
-    size_t i, j;
-    int temp;
+	size_t i, j;
+	int temp;
 
-    /* Calculate initial gap value */
-    size_t gap = 1;
-    while (gap < size / 3)
-    {
-        gap = gap * 3 + 1;
-    }
+	if (size <= 1 || array == NULL)
+		return;
 
-    while (gap > 0)
-    {
-        /* Perform insertion sort with the current gap */
-        for (i = gap; i < size; i++)
-        {
-            temp = array[i];
-            j = i;
+	/* Calculate initial gap value */
+	size_t gap = 1;
+	while (gap < size / 3)
+	{
+		gap = gap * 3 + 1;
+	}
 
-            /* Compare and swap elements within the gap interval */
-            while (j >= gap && array[j - gap] > temp)
-            {
-                array[j] = array[j - gap];
-                j -= gap;
-            }
-            array[j] = temp;
-        }
+	while (gap > 0)
+	{
+		/* Perform insertion sort with the current gap */
+		for (i = gap; i < size; i++)
+		{
+			temp = array[i];
+			j = i;
 
-        /* Print array after each gap interval */
-        print_array(array, size);
+			/* Compare and swap elements within the gap interval */
+			while (j >= gap && array[j - gap] > temp)
+			{
+				array[j] = array[j - gap];
+				j -= gap;
+			}
+			array[j] = temp;
+		}
 
-        /* Reduce the gap for the next iteration */
-        gap = (gap - 1) / 3;
-    }
+		/* Print array after each gap interval */
+		print_array(array, size);
+
+		/* Reduce the gap for the next iteration */
+		gap = (gap - 1) / 3;
+	}
 }
